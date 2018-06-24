@@ -1,7 +1,7 @@
 # openCVXSwift
 small test project for openCV and Swift
 
-There are two sliders to change the upper and lower threshold value for the canny function. 
+There are two sliders to change the upper and lower threshold value for the canny function. Everytime you change the value, the output image gets updated. It is pretty laggy, maybe because of the image size.
 
 Something like that right now:
 
