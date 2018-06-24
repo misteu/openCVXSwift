@@ -3,7 +3,7 @@ small test project for openCV and Swift
 
 Something like that right now:
 
-![Image of openCVXSwift TestApp](https://github.com/misteu/openCVXSwift/preview.png)
+![Image of openCVXSwift TestApp](preview.png)
 
 
 # requirements
