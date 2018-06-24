@@ -36,13 +36,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="l4T-0z-H7l">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="l4T-0z-H7l">
                                         <rect key="frame" x="-2" y="40.5" width="324" height="31"/>
                                         <connections>
                                             <action selector="sliderLower:" destination="BYZ-38-t0r" eventType="valueChanged" id="xd4-eJ-r1d"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="55q-Cz-XXe">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="55q-Cz-XXe">
                                         <rect key="frame" x="-2" y="90.5" width="324" height="31"/>
                                         <connections>
                                             <action selector="slideUpper:" destination="BYZ-38-t0r" eventType="valueChanged" id="pzi-ow-9nL"/>
