@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="storyBoard" id="BYZ-38-t0r" customClass="ViewController" customModule="openCVTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ofenbank_1" translatesAutoresizingMaskIntoConstraints="NO" id="bKm-bf-0Su">
+                                <rect key="frame" x="0.0" y="20" width="320" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="hg3-8S-yid"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vuv-Oh-pwF">
+                                <rect key="frame" x="0.0" y="340.5" width="320" height="227.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aoL-dx-98r">
+                                <rect key="frame" x="0.0" y="220" width="320" height="120.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="upper/Lower Threshold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBL-bU-tgn">
+                                        <rect key="frame" x="142.5" y="0.0" width="177.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="l4T-0z-H7l">
+                                        <rect key="frame" x="-2" y="40.5" width="324" height="31"/>
+                                        <connections>
+                                            <action selector="sliderLower:" destination="BYZ-38-t0r" eventType="valueChanged" id="xd4-eJ-r1d"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="2000" translatesAutoresizingMaskIntoConstraints="NO" id="55q-Cz-XXe">
+                                        <rect key="frame" x="-2" y="90.5" width="324" height="31"/>
+                                        <connections>
+                                            <action selector="slideUpper:" destination="BYZ-38-t0r" eventType="valueChanged" id="pzi-ow-9nL"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="l4T-0z-H7l" secondAttribute="trailing" id="1DC-V4-Va6"/>
+                                    <constraint firstItem="l4T-0z-H7l" firstAttribute="leading" secondItem="aoL-dx-98r" secondAttribute="leading" id="OBr-4E-9C2"/>
+                                    <constraint firstItem="55q-Cz-XXe" firstAttribute="leading" secondItem="aoL-dx-98r" secondAttribute="leading" id="QwB-Gx-ZTK"/>
+                                    <constraint firstAttribute="trailing" secondItem="55q-Cz-XXe" secondAttribute="trailing" id="TCH-xg-15S"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKm-bf-0Su" secondAttribute="trailing" id="1ud-Ea-0mU"/>
+                            <constraint firstItem="aoL-dx-98r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BhR-Fq-SJC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aoL-dx-98r" secondAttribute="trailing" id="FLj-vB-sfF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vuv-Oh-pwF" secondAttribute="trailing" id="L3i-Ee-Hdp"/>
+                            <constraint firstItem="bKm-bf-0Su" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TLn-Y0-n0v"/>
+                            <constraint firstItem="vuv-Oh-pwF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YW8-nd-dbT"/>
+                            <constraint firstItem="aoL-dx-98r" firstAttribute="top" secondItem="bKm-bf-0Su" secondAttribute="bottom" id="dEQ-H2-R5g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vuv-Oh-pwF" secondAttribute="bottom" id="fR1-ia-trE"/>
+                            <constraint firstItem="bKm-bf-0Su" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jBB-UZ-3iK"/>
+                            <constraint firstItem="vuv-Oh-pwF" firstAttribute="top" secondItem="aoL-dx-98r" secondAttribute="bottom" id="qYz-9k-BWc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputImage" destination="bKm-bf-0Su" id="tE6-ef-Gjl"/>
+                        <outlet property="lowerSlider" destination="l4T-0z-H7l" id="CA4-4S-n4B"/>
+                        <outlet property="outputImage" destination="vuv-Oh-pwF" id="poe-v0-h6G"/>
+                        <outlet property="thresholdLabel" destination="bBL-bU-tgn" id="Tl5-7Q-2Xn"/>
+                        <outlet property="upperSlider" destination="55q-Cz-XXe" id="rig-kH-KtS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="29.577464788732396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ofenbank_1" width="2304" height="1704"/>
+    </resources>
+</document>
